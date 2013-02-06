@@ -19,6 +19,7 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.integration.Message;
@@ -43,6 +44,8 @@ public class DefaultTwitterService implements TwitterService {
 
 	/** Holds a collection of polled Twitter messages */
 	private volatile Map<Long, TwitterMessage> twitterMessages;
+	
+	private static final Logger logger = Logger.getLogger(DefaultTwitterService.class);
 
 	@Autowired
 	@Qualifier("controlBusChannel")
@@ -101,6 +104,8 @@ public class DefaultTwitterService implements TwitterService {
 	 * @param tweet - The Spring Integration tweet object.
 	 */
 	public void addTwitterMessages(Tweet tweet) {
+		System.out.println("New incoming tweet: " + tweet.getText());
+		logger.warn("New incoming tweet: " + tweet.getText());
 		this.twitterMessages.put(tweet.getCreatedAt().getTime(), new TwitterMessage(tweet.getCreatedAt(),
 			tweet.getText(),
 			tweet.getFromUser(),

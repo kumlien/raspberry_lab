@@ -4,7 +4,7 @@
 <html>
     <head>
 
-        <title>Welcome to Spring Integration</title>
+        <title>Welcome to my RaspberryPi test</title>
 
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
@@ -22,8 +22,9 @@
         <div class="container">
             <div id="header" class="prepend-1 span-22 append-1 last">
                 <h1 class="loud">
-                    Welcome to Spring Integration
+                    Welcome to my Raspberry Pi test
                 </h1>
+                <h2>The test consists of four Pi:s with one nginx, two Tomcats and one MariaDB</h2>
                 <div>
                     <form:form id="formId">
                         <input id="startTwitter" type="submit" name="startTwitter" value="Start Twitter Search" /> |

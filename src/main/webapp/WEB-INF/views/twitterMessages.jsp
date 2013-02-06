@@ -1,5 +1,5 @@
 <%@ include file="/WEB-INF/views/includes/taglibs.jsp"%>
-                <p>This example searches Twitter and shows the results below.</p>
+                <p>This example searches Twitter for tweets regarding RaspberryPi, nginx, Tomcat or MariaDB shows the results below.</p>
                 <ul class="twitterMessages">
                     <c:choose>
                         <c:when test="${not empty twitterMessages}">
