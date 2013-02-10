@@ -24,7 +24,7 @@
                 <h1 class="loud">
                     Welcome to my Raspberry Pi test
                 </h1>
-                <h2>The test consists of four Pi:s with one nginx, two Tomcats and one MariaDB</h2>
+                <h2>The test consists of four Pi:s with one nginx, two Tomcats and one Cassandra</h2>
                 <div>
                     <form:form id="formId">
                         <input id="startTwitter" type="submit" name="startTwitter" value="Start Twitter Search" /> |

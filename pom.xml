@@ -72,6 +72,12 @@
 
 	<dependencies>
 
+		<dependency>
+			<groupId>com.netflix.astyanax</groupId>
+			<artifactId>astyanax</artifactId>
+			<version>1.56.24</version>
+		</dependency>
+
 		<!-- Testing -->
 
 		<dependency>

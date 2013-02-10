@@ -16,7 +16,7 @@
 
 	<!-- See also: http://static.springsource.org/spring-integration/reference/htmlsingle/#twitter -->
 	<int-twitter:search-inbound-channel-adapter
-		id="twitter" query="raspberrypi OR tomcat OR nginx OR mariadb"
+		id="twitter" query="#raspberrypi OR #tomcat OR #nginx OR #cassandra"
 		channel="twitterChannel" auto-startup="true">
 		<int:poller fixed-rate="5000" max-messages-per-poll="10" />
 	</int-twitter:search-inbound-channel-adapter>
