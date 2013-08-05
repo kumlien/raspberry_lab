@@ -1,2 +1,16 @@
 !.settings
 /target
+
+.project
+
+.classpath
+
+lab.war
+
+.settings/org.eclipse.wst.common.project.facet.core.xml
+
+.settings/org.eclipse.wst.common.component
+
+*.prefs
+
+.DS_Store
