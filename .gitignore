@@ -14,3 +14,5 @@ lab.war
 *.prefs
 
 .DS_Store
+
+target/classes/META-INF/spring/integration/spring-integration-context.xml
